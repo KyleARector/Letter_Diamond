@@ -41,10 +41,11 @@ def letter_diamond(char):
 #return the number of spaces for the middle of the diamond based on
 #  how many steps have already been taken as well as 
 #  the size of the pyramid itself (as represented by the number of steps between A and the letter in question)
+#  the spaces multiplier variable, which represents how many spaces should be between each letter.
 def get_mid_spaces(full, step):
   return spaces(((full-step)*2)-1) + spaces(SPACES_MULTIPLIER-1, mul=False)
 
-#return the letter based on the input letter and the step variable
+#return a letter based on the input letter and the number of steps before that letter.
 def get_prev(letter, step):
   return chr(ord(letter)-step)
 
