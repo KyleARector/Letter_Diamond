@@ -1,0 +1,6 @@
+python3 letter_diamond.py 'C'
+  A
+ B B
+C   C
+ B B
+  A
