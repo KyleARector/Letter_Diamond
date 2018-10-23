@@ -61,7 +61,12 @@ def spaces(num, mul=True):
   return string
 
 
-letter_diamond(sys.argv[1])
+def main():
+  if len(sys.argv) > 1:
+    letter_diamond(sys.argv[1])
+  else:
+    letter_diamond(input("Please enter a letter: "))
 
 
-
+if __name__ == "__main__":
+  main()
